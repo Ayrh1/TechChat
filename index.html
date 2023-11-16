@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./public/css/output.css" rel="stylesheet">
+    <title>TechChat</title>
+</head>
+
+<body class="flex flex-row h-screen w-full max-h-fit bg-black overflow-hidden">
+    <header class="flex flex-col justify-center h-screen w-3/12 max-h-fit bg-black border-r-8 border-white">
+
+        <div class="flex flex-col justify-center h-w-16 w-full p-2 rounded-full">
+            <img class="w-4/5 rounded-full self-center" src="./Assets/betterlogo.jpg" alt="TechLogoImg">
+            <p class="text-2xl text-white antialiased font-bold self-center">TechChat</p>
+        </div>
+        <nav class="flex flex-col content-center h-3/4 w-full max-h-fit bg-black">
+        
+            <button class="bg-sky-600 w-4/5 h-1/6 m-4 self-center rounded-3xl 
+            text-3xl antialiased font-bold hover:bg-sky-400
+            outline outline-4 outline-white outline-offset-4 hover:outline-dashed">Homepage</button>
+
+            <button class="bg-sky-600 w-4/5 h-1/6 m-4 self-center rounded-3xl 
+            text-3xl antialiased font-bold hover:bg-sky-400
+            outline outline-4 outline-white outline-offset-4 hover:outline-dashed">Dashboard</buton>
+        
+            <button class="bg-sky-600 w-4/5 h-1/6 m-4 self-center rounded-3xl 
+            text-3xl antialiased font-bold hover:bg-sky-400
+            outline outline-4 outline-amber-500 outline-offset-4 hover:outline-dashed">Login</button>
+        
+            <button class="bg-sky-600 w-4/5 h-1/6 m-4 self-center rounded-3xl 
+            text-3xl antialiased font-bold hover:bg-sky-400
+            outline outline-4 outline-red-500 outline-offset-4 hover:outline-dashed">logout</button>
+
+        </nav>
+    </header>
+    <main class="flex flex-col h-screen w-9/12 pt-8 overflow-auto bg-slate-900">
+        <div class = "flex flex-col justify-center items-center self-center h-56 w-10/12 bg-black overflow-y-auto rounded-3xl m-2">
+            <div class="flex flex-row h-1/6 w-full bg-sky-500 justify-between  rounded-t-3xl overflow-y-auto">
+                <p class="w-full font-extrabold text-black self-end px-4 text-3xl antialiased ">{{Title}}</p>
+                <p class="w-full font-extrabold text-black self-end px-4 text-3xl antialiased text-right">{{By and date}}</p>
+            </div> 
+                <div class="flex h-5/6 w-full bg-black border-8 border-sky-500 self-start rounded-b-3xl overflow-y-auto">
+                <p class="text-white text-xl w-full h-full antialiased overflow-x-visible p-2">{{Content}}</p>   
+            </div>
+        </div>
+  
+    </main>
+</body>
+</html>
