@@ -2,7 +2,7 @@
 module.exports = {
   content: [
     "./index.html",
-    "./login.html"
+    "./views/layouts/main.handlebars" //this is the main.handlbars.js
 
   ],
   theme: {

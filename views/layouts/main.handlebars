@@ -23,20 +23,26 @@
             <button class="bg-sky-600 w-4/5 h-1/6 m-4 self-center rounded-3xl 
             text-3xl antialiased font-bold hover:bg-sky-400
             outline outline-4 outline-white outline-offset-4 hover:outline-dashed">Dashboard</buton>
-            {{ if}}
-            <button class="bg-sky-600 w-4/5 h-1/6 m-4 self-center rounded-3xl 
-            text-3xl antialiased font-bold hover:bg-sky-400
-            outline outline-4 outline-amber-500 outline-offset-4 hover:outline-dashed">Login</button>
-        
+            
+            {{#if login}}
             <button class="bg-sky-600 w-4/5 h-1/6 m-4 self-center rounded-3xl 
             text-3xl antialiased font-bold hover:bg-sky-400
             outline outline-4 outline-red-500 outline-offset-4 hover:outline-dashed">logout</button>
+            {{else}}
+            <button class="bg-sky-600 w-4/5 h-1/6 m-4 self-center rounded-3xl 
+            text-3xl antialiased font-bold hover:bg-sky-400
+            outline outline-4 outline-amber-500 outline-offset-4 hover:outline-dashed">Login</button>
+            {{/if}}
 
         </nav>
     </header>
+
     <main class="flex flex-col h-screen w-9/12 pt-8 overflow-auto bg-slate-900">
+    
     {{{ body }}}
+    
     </main>
+    
 </body>
 </html>
 

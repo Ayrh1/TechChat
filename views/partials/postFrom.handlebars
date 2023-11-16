@@ -1,0 +1,24 @@
+<!-- this post form is meant to be used for both, posting a new post and adding a new comment -->
+
+<div class = "flex flex-col justify-center items-center self-center h-4/5 w-9/12 bg-sky-600 rounded-3xl border-8 border-sky-600">
+    <div class="flex h-1/6 w-full bg-sky-600 rounded-t-3xl">
+        {{#if post}}
+        <p class="w-full font-extrabold text-black self-end px-4 text-5xl antialiased ">New Post!</p>
+        {{else}}
+        <p class="w-full font-extrabold text-black self-end px-4 text-5xl antialiased ">New Comment!</p>
+        {{/if}}
+    </div> 
+    <form action="" class="flex flex-col justify-center items-center h-full w-full bg-black rounded-b-3xl">
+        
+        {{#if post}}    
+        <lable class="text-white self-start text-5xl w-11/12 pl-10 my-3" for="title">What's on your mind?</lable>
+        <input class="rounded-xl  h-16 w-11/12 mb-2 border-8 border-sky-600" type="text" id="title" name="title" >
+        {{/if}}           
+        <lable class="text-white self-start text-5xl w-11/12 pl-10 my-3" for="title">Tell Me More!</lable>
+        <textarea class="rounded-xl h-1/3 w-11/12 mb-2 border-8 border-sky-600" type="text" id="title" name="title" ></textarea>
+                    
+        <input class = "font-extrabold text-white text-2xl w-1/6 h-14 my-5 antialiased rounded-xl
+        outline outline-8 outline-sky-500 outline-offset-4 hover:outline-dashed" type = "submit" value = "Create!">
+
+    </form>
+</div>
