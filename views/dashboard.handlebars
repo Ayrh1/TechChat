@@ -6,7 +6,7 @@
     <div class="flex flex-row h-16 w-11/12 justify-between rounded-lg overflow-auto bg-sky-500 border-4 border-black hover:bg-white
         outline outline-8 outline-white outline-offset-4 hover:outline-sky-600  ">
         <p class="w-full h-full font-extrabold text-black pt-3 px-4 text-3xl antialiased">C{{post.title}}</p>
-        <p class="w-full h-full font-extrabold text-black pt-3 px-4 text-3xl antialiased text-right">{{post.createdAt}}</p>
+        <p class="w-full h-full font-extrabold text-black pt-3 px-4 text-3xl antialiased text-right">{{formatDate post.createdAt}}</p>
     </div> 
     {{/each}}
     <button class="w-32 h-14 m-4 self-center rounded-xl text-white text-xl antialiased font-bold hover:bg-sky-400

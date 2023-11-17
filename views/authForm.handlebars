@@ -29,12 +29,12 @@
 
             <!-- Conditional buttons for sign-up or login -->
             {{#if isSignUp}}
-                <button onclick="location.href='/login'" 
+                <button onclick="location.href='api/users/login'" 
                         class="font-extrabold text-red-500 text-xl outline outline-1 outline-red-500 outline-offset-4 hover:outline-dashed">
                     Login Instead
                 </button>
             {{else}}
-                <button onclick="location.href='/signup'" 
+                <button onclick="location.href='api/users/signup'" 
                         class="font-extrabold text-green-500 text-xl outline outline-1 outline-green-500 outline-offset-4 hover:outline-dashed">
                     Sign Up Instead
                 </button>

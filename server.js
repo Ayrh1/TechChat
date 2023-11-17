@@ -56,6 +56,6 @@ app.use(routes);
 
 //Syncs the Sequelize models with the database (without forcing any schema changes with force: false)
 //and starts the Express server on the specified PORT.
-sequelize.sync({ force: true }).then(() => {
+sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });

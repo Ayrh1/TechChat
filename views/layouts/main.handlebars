@@ -16,23 +16,23 @@
         </div>
         <nav class="flex flex-col content-center h-3/4 w-full max-h-fit bg-black">
         
-            <button onclick="location.href='/"
+            <button href="/"
             class="bg-sky-600 w-4/5 h-1/6 m-4 self-center rounded-3xl 
             text-5xl antialiased font-bold hover:bg-sky-400
             outline outline-4 outline-white outline-offset-4 hover:outline-dashed">Homepage</button>
 
-            <button onclick="location.href='/dashbord"
+            <button onclick="location.href='/dashboard'"
             class="bg-sky-600 w-4/5 h-1/6 m-4 self-center rounded-3xl 
             text-5xl antialiased font-bold hover:bg-sky-400
             outline outline-4 outline-white outline-offset-4 hover:outline-dashed">Dashboard</buton>
             
             {{#if login}}
-            <button onclick="location.href='/users/logout'"
+            <button onclick="location.href='location.href='/logout'"
             class="bg-sky-600 w-4/5 h-1/6 m-4 self-center rounded-3xl 
             text-5xl antialiased font-bold hover:bg-sky-400
             outline outline-4 outline-red-500 outline-offset-4 hover:outline-dashed">logout</button>
             {{else}}
-            <button onclick="location.href='users/login'"
+            <button onclick="location.href='/login'"
             class="bg-sky-600 w-4/5 h-1/6 m-4 self-center rounded-3xl 
             text-5xl antialiased font-bold hover:bg-sky-400
             outline outline-4 outline-amber-500 outline-offset-4 hover:outline-dashed">Login</button>
