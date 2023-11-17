@@ -13,6 +13,8 @@ const routes = require('./controllers');
 const helpers = require('./utils/helpers');
 //Imports the Sequelize connection configured in ./config/connection. This will be used to interact with your database.
 const sequelize = require('./config/connection');
+//helper for handlebars 
+
 
 // Imports connect-session-sequelize which is a SQL session store using Sequelize. It is used to store Express session data in the database.
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
@@ -54,6 +56,6 @@ app.use(routes);
 
 //Syncs the Sequelize models with the database (without forcing any schema changes with force: false)
 //and starts the Express server on the specified PORT.
-sequelize.sync({ force: false }).then(() => {
+sequelize.sync({ force: true }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });

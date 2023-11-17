@@ -1,14 +1,26 @@
 
 <!-- this displays all the users posts when the user arrives to the homepage-->
 {{#each posts as |post| }}
-<div class = "flex flex-col justify-center items-center self-center h-56 w-10/12 bg-black overflow-y-auto rounded-3xl m-2">
-    <div class="flex flex-row h-1/6 w-full bg-sky-500 justify-between  rounded-t-3xl overflow-y-auto">
-        <p class="w-full font-extrabold text-black self-end px-4 text-3xl antialiased ">{{post.Title}}</p>
-        <p class="w-full font-extrabold text-black self-end px-4 text-3xl antialiased text-right">by {{post.user}} @ {{post.createdAt}}</p>
+<div class = "flex flex-col justify-center items-center self-center h-fit w-10/12 bg-black overflow-y-auto rounded-t-3xl mt-2">
+    <div class="flex flex-row h-fit w-full bg-sky-500 justify-between  rounded-t-3xl overflow-y-auto">
+        <p class="w-full font-extrabold text-black self-end px-4 text-3xl antialiased ">{{post.title}}</p>
+        <p class="w-full font-extrabold text-black self-end px-4 text-3xl antialiased text-right">by {{post.user.name}} @ {{formatDate post.createdAt}}</p>
     </div> 
-        <div class="flex h-5/6 w-full bg-black border-8 border-sky-500 self-start rounded-b-3xl overflow-y-auto">
-        <p class="text-white text-xl w-full h-full antialiased overflow-x-visible p-2">{{post.text}}</p>   
+        <div class="flex h-fit w-full bg-black border-8 border-sky-500 self-start  overflow-y-auto">
+        <p class="text-white text-2xl w-full h-full antialiased overflow-x-visible p-2">{{post.text}}</p>   
+    </div>
+</div>
+<!--attached comment -->
+{{#if isLogin}}
+ {{#each post.comments as |comment|}}
+<div class = "flex flex-col justify-center items-center self-center h-fit w-10/12 bg-black overflow-y-auto rounded-xl ">
+    <div class="flex flex-row h-fit w-full bg-black justify-between  rounded-t-3xl overflow-y-auto ">
+        <p class="w-full font-extrabold text-white self-end px-4 text-3xl antialiased ">{{comment.user.name}} @ {{formatDate comment.createdAt}}</p>
+    </div> 
+    <div class="flex h-fit w-full bg-black  self-start rounded-b-3xl overflow-y-auto">
+        <p class="text-white text-2xl w-full h-full antialiased overflow-x-visible p-2">{{comment.text}}</p>   
     </div>
 </div>
 {{/each}}
-
+{{/if}}
+{{/each}}

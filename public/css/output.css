@@ -534,8 +534,17 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.m-2 {
+  margin: 0.5rem;
+}
+
 .m-4 {
   margin: 1rem;
+}
+
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .flex {
@@ -550,6 +559,18 @@ video {
   height: 75%;
 }
 
+.h-5\/6 {
+  height: 83.333333%;
+}
+
+.h-56 {
+  height: 14rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
 .h-screen {
   height: 100vh;
 }
@@ -557,6 +578,10 @@ video {
 .max-h-fit {
   max-height: -moz-fit-content;
   max-height: fit-content;
+}
+
+.w-10\/12 {
+  width: 83.333333%;
 }
 
 .w-3\/12 {
@@ -587,8 +612,24 @@ video {
   align-content: center;
 }
 
+.items-center {
+  align-items: center;
+}
+
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.self-start {
+  align-self: flex-start;
+}
+
+.self-end {
+  align-self: flex-end;
 }
 
 .self-center {
@@ -603,6 +644,14 @@ video {
   overflow: hidden;
 }
 
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.overflow-x-visible {
+  overflow-x: visible;
+}
+
 .rounded-3xl {
   border-radius: 1.5rem;
 }
@@ -611,8 +660,27 @@ video {
   border-radius: 9999px;
 }
 
+.rounded-b-3xl {
+  border-bottom-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+
+.rounded-t-3xl {
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+
+.border-8 {
+  border-width: 8px;
+}
+
 .border-r-8 {
   border-right-width: 8px;
+}
+
+.border-sky-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(14 165 233 / var(--tw-border-opacity));
 }
 
 .border-white {
@@ -623,6 +691,11 @@ video {
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-sky-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 165 233 / var(--tw-bg-opacity));
 }
 
 .bg-sky-600 {
@@ -639,8 +712,17 @@ video {
   padding: 0.5rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .pt-8 {
   padding-top: 2rem;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .text-2xl {
@@ -653,8 +735,37 @@ video {
   line-height: 2.25rem;
 }
 
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .font-bold {
   font-weight: 700;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-white {
