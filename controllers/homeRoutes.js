@@ -1,6 +1,18 @@
 const router = require('express').Router();
+
+router.get('/', async (req, res) => {
+  // Send the rendered Handlebars.js template back as the response
+  res.render('homepage');
+});
+
+module.exports = router;
+
+
+/*
+
+const router = require('express').Router();
 const { User } = require('../models');
-const withAuth = require('../utils/auth');
+const withAuth = require('../utils/helpers.js');
 
 // Prevent non logged in users from viewing the homepage
 router.get('/', withAuth, async (req, res) => {
@@ -33,3 +45,4 @@ router.get('/login', (req, res) => {
 });
 
 module.exports = router;
+*/

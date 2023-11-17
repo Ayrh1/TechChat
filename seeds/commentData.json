@@ -1,16 +1,16 @@
 [
     {
-        "comment_text": "OMG! I saw that movie. I totally feel that! AI should be illegal!",
+        "text": "OMG! I saw that movie. I totally feel that! AI should be illegal!",
         "post_id": 1,
         "user_id": 3
     },
     {
-        "comment_text": "That's scary! I'll never use my phone when I use the restroom ever again!!",
+        "text": "That's scary! I'll never use my phone when I use the restroom ever again!!",
         "post_id": 2,
         "user_id": 1
     },
     {
-        "comment_text": "Ebook are a waste of money!! They don't allow you to download the book. So, you have to always use their services if you want to access to the books you paid for!scam!!",
+        "text": "Ebook are a waste of money!! They don't allow you to download the book. So, you have to always use their services if you want to access to the books you paid for!scam!!",
         "post_id": 3,
         "user_id": 2
     }
