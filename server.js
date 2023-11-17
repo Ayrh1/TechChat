@@ -10,7 +10,7 @@ const exphbs = require('express-handlebars');
 //Imports the routing files from the controllers directory of your application.
 const routes = require('./controllers');
 //Imports utility functions or 'helpers' used in Handlebars templates.
-const helpers = require('./utils/helpers');
+const helpers = require('./utils/handlebars-helpers.js');
 //Imports the Sequelize connection configured in ./config/connection. This will be used to interact with your database.
 const sequelize = require('./config/connection');
 //helper for handlebars 
@@ -24,7 +24,7 @@ const app = express();
 //Sets the port for the application to the environment variable PORT, or 3001 if PORT is not set.
 const PORT = process.env.PORT || 3001;
 //Creates a new instance of the Handlebars view engine, passing in your custom helpers.
-const hbs = exphbs.create({ helpers });
+const hbs = exphbs.create({ helpers});
 
 // Configure and link a session object with the sequelize store
 const sess = {
