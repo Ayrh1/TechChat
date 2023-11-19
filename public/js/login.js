@@ -5,7 +5,9 @@ const loginFormHandler = async (event) => {
   // Gather the data from the form elements on the page
   const name = document.querySelector('#name').value.trim();
   const password = document.querySelector('#password').value.trim();
-
+ 
+  console.log(password,name);
+  
   if (name && password) {
     // Send the e-mail and password to the server
     const response = await fetch('/api/users/login', {

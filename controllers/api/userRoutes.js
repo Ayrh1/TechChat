@@ -2,10 +2,11 @@ const router = require('express').Router();
 const { User } = require('../../models');
 
 router.post('/login', async (req, res) => {
+  console.log(req.body.name);
   try {
     // Find the user who matches the posted e-mail address
     const userData = await User.findOne({ where: { name: req.body.name } });
-
+    console.log(req.body.name);
     if (!userData) {
       res
         .status(400)
