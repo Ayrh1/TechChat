@@ -32,14 +32,6 @@ router.get('/dashboard', withAuth, async (req, res) => {
   }
 });
 
-router.get('/dashboard/newPost', withAuth, async (req, res) => {
-  try {
 
-    res.render('postForm', { isPost: true }); // Pass relevant data to the template
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ message: "An error occurred while loading the page." });
-  }
-});
 
 module.exports = router;
