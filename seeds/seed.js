@@ -21,7 +21,9 @@ const seedDatabase = async () => {
   try { 
     await sequelize.sync({ force: true });
 
-    await User.bulkCreate(userData);
+    await User.bulkCreate(userData, {
+      individualHooks: true // very important, if using a beforeCreate Hook
+    });
 
     await Post.bulkCreate(postData);
 
