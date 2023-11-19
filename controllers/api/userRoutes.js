@@ -37,6 +37,26 @@ router.post('/login', async (req, res) => {
   }
 });
 
+// CREATE new user
+router.post('/signup', async (req, res) => {
+  try {
+    const userData = await User.create({
+      name: req.body.name,
+      password: req.body.password,
+    });
+
+    req.session.save(() => {
+      req.session.user_id = userData.id;
+      req.session.logged_in = true;
+      
+      res.status(200).json({ user: userData, message: 'You are now logged in!' });
+    });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ message: 'An error occurred while signing up.' });
+  }
+});
+
 router.post('/logout', (req, res) => {
   if (req.session.logged_in) {
     // Remove the session variables
