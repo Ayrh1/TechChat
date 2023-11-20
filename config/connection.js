@@ -11,7 +11,7 @@ declare a variable sequelize. This variable will be used to hold the Sequelize i
 that connects to your database.
 */
 let sequelize;
-
+console.log(process.env.JAWSDB_URL)
 // * (see note..)
 if (process.env.JAWSDB_URL) {
   sequelize = new Sequelize(process.env.JAWSDB_URL);
