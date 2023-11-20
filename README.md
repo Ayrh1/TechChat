@@ -1,7 +1,7 @@
 # 14 Tech Blog (<!>Constructuin in proceess<!>)
 
 ## Description
-this aplication is a a basic ecommance database. it allows user to keep inventory and use the http methods to creat categories, create products and add tags, using sequelize 
+small chat room for the tech community !
 
 ## Table of Contents (Optional)
 - [Installation](#installation)
@@ -14,9 +14,24 @@ this aplication is a a basic ecommance database. it allows user to keep inventor
 - [Test](#Test)
 
 ## Installation
-node, mysql, sequelize,dotenv, express
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "connect-session-sequelize": "^7.0.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "express-session": "^1.17.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5",
+    "sql": "^0.78.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.5",
+    "nodemon": "^2.0.3"
+  }
 ## Usage
-install the listed packages and run aplication using insomnia  
+![img](./Assets/site.png)
+install the listed packages and run application  
 
 ## Credits
  * [Erick Hoverstine (tutor)](none)
